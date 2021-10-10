@@ -1,6 +1,6 @@
 /*
  * 2021 Crystal and Phonon - Exercise 1
- * solver.cpp
+ * ex1solver.cpp
  */
 
 #define _CRT_SECURE_NO_WARNINGS  // not to mention warnings
