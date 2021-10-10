@@ -27,7 +27,7 @@ double freq_from_wavenumber(const double k, int mode) {  // mode : [1/0]=[O/A]
 }
 
 void motion_anime(void) {
-    rep(t, 350) {
+    rep(t, 1000) {
         rep(kn, 5){
             double k = kn * PI / (4 * a);
             rep(mode, 2) {
@@ -42,10 +42,9 @@ void motion_anime(void) {
                     m_amp = 1 / ratio, M_amp = 1;
                 }
                 rep(s, 15) {
-                    double u = cos(s * k * a - omega * t / 12);
+                    double u = cos(s * k * a - omega * t / 20);
                     u *= (s % 2 ? m_amp : M_amp);
-                    ofs << u;
-                    if (s != 14) ofs << ",";
+                    ofs << u << ",";
                 }
             }
         }

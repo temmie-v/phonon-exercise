@@ -4,7 +4,7 @@ from PIL import Image, ImageDraw, ImageFilter
 data = pd.read_csv("./ex2anime.dat", header=None)
 images = []
 
-for t in range(350):
+for t in range(1000):
     im = Image.new('RGB', (800, 500), (0, 0, 0))
     draw = ImageDraw.Draw(im)
     for i in range(2):
