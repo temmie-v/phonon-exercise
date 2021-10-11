@@ -1,6 +1,8 @@
 /*
  * 2021 Crystal and Phonon - Exercise 1
  * ex1solver.cpp
+ *
+ * should be compiled with a compiler newer than C++11
  */
 
 #define _CRT_SECURE_NO_WARNINGS  // not to mention warnings
